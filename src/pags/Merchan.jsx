@@ -4,6 +4,9 @@ function Merchan() {
   return (
     <div className="container mt-5">
       <p>Página de merchandising</p>
+      <section>
+        
+      </section>
     </div>
   );
 }
