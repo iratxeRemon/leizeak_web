@@ -16,6 +16,11 @@ function App() {
         <Route path="/merchan" element={<Merchan />} /> 
         <Route path="/contacto" element={<Contacto />} /> 
       </Routes>
+      {/*
+      <footer className='bg-black'> 
+        <p>fdskjnlssjk</p>
+      </footer>
+       */}
     </Router>
   );
 }

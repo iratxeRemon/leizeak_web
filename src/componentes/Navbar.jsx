@@ -30,31 +30,12 @@ function Navbar() {
           <button className="btn btn-outline-light dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
             <i className="bi bi-globe"></i> 
           </button>
-          {/*
-          <ul className="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
-            <li>
-              <a className="dropdown-item" href="#">
-                <i className="bi bi-house-door"></i> Euskera 
-              </a>
-            </li>
-            <li>
-              <a className="dropdown-item" href="#">
-                <i className="bi bi-envelope"></i> Castellano 
-              </a>
-            </li>
-            <li>
-              <a className="dropdown-item" href="#">
-                <i className="bi bi-gear"></i> Inglés 
-              </a>
-            </li>
-          </ul>
-          */}
+
           <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
             <a class="dropdown-item" href="#">Euskara</a>
             <a class="dropdown-item" href="#">Castellano</a>
             <a class="dropdown-item" href="#">English</a>
           </div>
-          
         </div>
       </div>
     </nav>
