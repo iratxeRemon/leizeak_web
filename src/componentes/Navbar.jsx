@@ -31,10 +31,10 @@ function Navbar() {
             <i className="bi bi-globe"></i> 
           </button>
 
-          <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="#">Euskara</a>
-            <a class="dropdown-item" href="#">Castellano</a>
-            <a class="dropdown-item" href="#">English</a>
+          <div className="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+            <a className="dropdown-item" href="#">Euskara</a>
+            <a className="dropdown-item" href="#">Castellano</a>
+            <a className="dropdown-item" href="#">English</a>
           </div>
         </div>
       </div>

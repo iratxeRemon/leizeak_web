@@ -1,47 +1,74 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Concierto from '../componentes/Concierto';
 
 function Conciertos() {
-    const imagenes = [
-    '2024_11_23.jpg',
-    '2024_09_19.jpg',
-    '2024_08_31.jpg',
-    '2024_07_08.jpg',
-    '2024_07_06.jpg',
-    '2024_04_20.jpg',
-    '2024_01_26.jpg',
-
-    '2023_10_07.jpg',
-    '2023_09_30.jpg',
-    '2023_09_29.jpg',
-    '2023_07_22.jpg',
-    '2023_06_022.jpg',
-    '2023_06_09.jpg',
-    '2022_11_19.jpg',
-    ];
-    
+       
     const [hoveredImg, setHoveredImg] = useState(null);
+    const [conciertos, setConciertos] = useState([]);
+
+
+    useEffect(() => {
+        const fetchData = async () => {
+          try {
+            const response = await fetch("/data/conciertos.json"); // Carga el JSON
+            if (!response.ok) throw new Error("Error al cargar los datos");
+            const data = await response.json();
+            setConciertos(data);
+            console.log(data);            
+          } catch (error) {
+            console.error("Error al obtener los datos:", error);
+          }
+        };
+    
+        fetchData();
+    },[]);
+
+
 
     return (
-        <div className="container mt-5">
-            <h1 className="text-center mb-4">Últimos conciertos</h1>
+        <div>
+            {/*
+                <div style={{
+                    position: 'fixed',
+                    top: 0,
+                    left: 0,
+                    width: '100%',
+                    height: '100%',
+                    backgroundImage: "url('src/imgs/fondo_negro.jpg')",
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                    opacity: 0.9, 
+                    zIndex: -1  
+                }}></div>
+            */}
+            
+        
+        <div className="container mt-5 "> {/* text-white */}
+            <h1 className="text-center mb-4 ">Próximos conciertos</h1>
+            <p className="text-center mb-5">No hay información sobre los próximos conciertos</p>
+            
+            <div className="mb-5 pb-5"></div>
 
-            <section className="row mt-5">
-                {imagenes.map((imagen, index) => (
-                    <div key={index} className="bg-black col-12 col-md-4 mb-4" style={{position:'relative'}} onMouseEnter={()=>setHoveredImg(index)} onMouseLeave={()=>setHoveredImg(null)}>
-                        <img src={`src/imgs/carteles/${imagen}`} alt={`Cartel ${index + 1}`} className="img-fluid" 
-                            style={{ opacity: hoveredImg === index ? 0.4 : 1, transition:'opacity 0.7s'}}
-                        />
-                        {hoveredImg === index && (
-                            <button className="view-gallery-btn" style={{position:'absolute', top:'50%', left:'50%', transform:'translate(-50%, -50%)', padding:'10px 20px',
-                                backgroundColor: 'rgba(255, 255, 255, 0.8)', color: 'black', border: 'none', borderRadius: '5px', cursor: 'pointer'}}>
-                                Ver galería
-                            </button>
-                        )}
-                    </div>
-                ))}
+            <h1 className="text-center mb-4">Conciertos anteriores</h1>
+
+            <section className="row g-4 ">
+            {conciertos.map((concierto, index) => (
+                
+                <div key={index} className="col-12 col-md-4 mb-4 d-flex align-items-center justify-content-center" style={{position:'relative'}} onMouseEnter={()=>setHoveredImg(index)} onMouseLeave={()=>setHoveredImg(null)}>
+                    <img src={`src/imgs/carteles/${concierto.cartelImg}.jpg`} alt={`${concierto.descripcion}`} className="img-fluid" 
+                        style={{ opacity: (hoveredImg === index && concierto.fotos && Object.keys(concierto.fotos).length > 0) ? 0.4 : 1, transition:'opacity 0.7s'}}
+                    />
+                    {hoveredImg === index && concierto.fotos && Object.keys(concierto.fotos).length > 0 && (
+                        <button className="" style={{position:'absolute', top:'50%', left:'50%', transform:'translate(-50%, -50%)', padding:'10px 20px',
+                            backgroundColor: 'rgba(255, 255, 255, 0.8)', color: 'black', border: 'none', borderRadius: '5px', cursor: 'pointer'}}>
+                            Ver galería
+                        </button>
+                    )}
+                </div>
+            ))}
+                
             </section>
-        </div>
+        </div></div>
     );
 }
 
