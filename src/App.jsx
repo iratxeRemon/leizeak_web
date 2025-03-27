@@ -6,8 +6,10 @@ import Inicio from './pags/Inicio';
 import Conciertos from './pags/Conciertos'; 
 import Merchan from './pags/Merchan'; 
 import Contacto from './pags/Contacto'; 
+import { useTranslation } from "react-i18next";
 
 function App() {
+  const { t } = useTranslation();
   return (
     <div className="flex flex-col min-h-screen">
       <Router>
@@ -36,11 +38,11 @@ function App() {
                 <a href="#" className="text-secondary fs-4"><i className="bi bi-youtube"></i></a>
               </div>
 
-              <div className="col-md-4 mb-3 d-flex justify-content-end gap-4">
-                <a href="/" className="text-secondary text-decoration-none">Inicio</a>
-                <a href="/conciertos" className="text-secondary text-decoration-none">Conciertos</a>
-                <a href="/productos" className="text-secondary text-decoration-none">Productos</a>
-                <a href="/contacto" className="text-secondary text-decoration-none">Contacto</a>
+              <div className="col-md-4 mb-3 justify-content-end gap-4 d-none d-lg-flex">
+                <a href="/" className="text-secondary text-decoration-none">{t("menu_inicio")}</a>
+                <a href="/conciertos" className="text-secondary text-decoration-none">{t("menu_conciertos")}</a>
+                <a href="/productos" className="text-secondary text-decoration-none">{t("menu_tienda")}</a>
+                <a href="/contacto" className="text-secondary text-decoration-none">{t("menu_contacto")}</a>
               </div>
 
             </div>

@@ -19,25 +19,22 @@ function Merchan() {
       <div className=" mt-5 ">
   
       
-        <div className="text-center ">
-          <h1 className="display-4 fw-bold mb-4">{t("tienda_titulo")}</h1>
-          <p className="lead mb-4 mx-auto" style={{ maxWidth: "700px" }}>
-            Puedes ayudarnos a seguir con este proyecto comprando nuestros productos. Próximamente posibilidad de compra
-            online.
-          </p>
+        <div className="container text-center">
+          <h1 className="display-4 fw-bold mb-4">{t("tienda_titulo1")}</h1>
+          <p className="lead mb-4 mx-auto" style={{ maxWidth: "700px" }}>{t("tienda_subtitulo1")}</p>
         </div>      
 
 
         <div className="mb-5 pb-5"></div>
-        <div className="mb-5 pb-5"></div>
+        <div className="d-none d-lg-block mb-5 pb-5"></div>
 
 
 
 
         {/* SECCIÓN PRODUCTOS */}
         <section className='container mb-5'>
-          <h1 className='display-4 fw-bold text-center mb-4'>Nuestro merchan</h1>
-          <p className='lead text-center mb-5'>Estos son los productos que tenemos actualmente disponibles</p>
+          <h1 className='display-4 fw-bold text-center mb-4'>{t("tienda_titulo2")}</h1>
+          <p className='lead text-center mb-5'>{t("tienda_subtitulo2")}</p>
           <div className="row">
 
             {/* CAMISETA */}
@@ -49,8 +46,8 @@ function Merchan() {
                   </ObjectCanvas>
                 </div>
                 <div className="card-body">
-                  <h5 className="card-title">Camiseta</h5>
-                  <p className="card-text">Camiseta negra del grupo</p>
+                  <h5 className="card-title">{t("tienda_articulo1")}</h5>
+                  <p className="card-text">{t("tienda_descripcionArticulo1")}</p>
                 </div>
               </div>
             </div>
@@ -64,8 +61,8 @@ function Merchan() {
                   </ObjectCanvas>
                 </div>
                 <div className="card-body">
-                  <h5 className="card-title">Púa de guitarra</h5>
-                  <p className="card-text">Púa de guitarra con el logo del grupo</p>
+                  <h5 className="card-title">{t("tienda_articulo2")}</h5>
+                  <p className="card-text">{t("tienda_descripcionArticulo2")}</p>
                 </div>
               </div>
             </div>
@@ -79,8 +76,8 @@ function Merchan() {
                   </ObjectCanvas>
                 </div>
                 <div className="card-body">
-                  <h5 className="card-title">Disco</h5>
-                  <p className="card-text">Primer disco del grupo</p>
+                  <h5 className="card-title">{t("tienda_articulo3")}</h5>
+                  <p className="card-text">{t("tienda_descripcionArticulo3")}</p>
                 </div>
               </div>
             </div>
@@ -97,8 +94,8 @@ function Merchan() {
 
           <div className="col-md-3 text-start">
             <img 
-            src="src/imgs/camisetas.jpg" 
-            alt="Leizeak mostrando las camisetas" 
+            src="/imgs/camisetas.jpg" 
+            alt={t("tienda_img1_alt")}
             className="img-fluid rounded" 
             style={{ maxWidth: "100%", height: "auto" }} />
           </div>
@@ -107,8 +104,8 @@ function Merchan() {
 
           <div className="col-md-3 text-end">
             <img 
-            src="src/imgs/logo_camiseta.png" 
-            alt="Diseño camiseta" 
+            src="/imgs/logo_camiseta.png" 
+            alt={t("tienda_img2_alt")}
             className="img-fluid rounded" 
             style={{ maxWidth: "100%", height: "auto" }} />
           </div>

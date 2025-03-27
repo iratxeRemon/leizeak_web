@@ -1,3 +1,49 @@
 {
-  
+	"menu_inicio": "Hasiera",
+	"menu_conciertos": "Kontzertuak",
+	"menu_tienda": "Denda",
+	"menu_contacto": "Kontaktua",
+
+	"disco": "Disko berria laster",
+	"inicio_escucharAhora": "Entzun orain",
+	"inicio_titulo1": "Gure musika",
+	"inicio_descripcion1": "Disko osoa",
+	"inicio_descripcion2": "Bideoklip ofiziala",
+	"inicio_masVideos": "Ikusi bideo gehiago",
+	"inicio_titulo2": "Hurrengo kontzertuak",
+	"inicio_concierto1": "Asmatutako kontzertua 1",
+	"inicio_concierto2": "Asmatutako kontzertua 2",
+	"inicio_concierto3": "Asmatutako kontzertua 3",
+	"inicio_lugar": "Lekua",
+	"inicio_verCartel": "Ikusi kartela",
+
+	"conciertos_titulo1": "Hurrengo kontzertuak",
+	"conciertos_subtitulo1": "Ez dago informaziorik hurrengo kontzertuei buruz",
+	"conciertos_titulo2": "Aurreko kontzertuak",
+	"conciertos_verGaleria": "Ikusi galeria",
+
+	"tienda_titulo1": "Bultza ezazu gure musika!",
+	"tienda_subtitulo1": "Gure produktuak erosiz gure proiektua babestu dezakezu. Laster online erosteko aukera.",
+	"tienda_titulo2": "Gure merchandising",
+	"tienda_subtitulo2": "Hauek dira une honetan eskuragarri ditugun produktuak",
+	"tienda_articulo1": "Kamiseta",
+	"tienda_descripcionArticulo1": "Taldearen kamiseta beltza",
+	"tienda_articulo2": "Pua",
+	"tienda_descripcionArticulo2": "Taldearen logotipoa duen gitarra-pua",
+	"tienda_articulo3": "Diskoa",
+	"tienda_descripcionArticulo3": "Gure lehen diskoa",
+	"tienda_img1_alt": "Leizeak kamisetak erakusten",
+	"tienda_img2_alt": "Kamisetaren diseinua",
+
+
+	"contacto_titulo1": "Informazioa",
+	"contacto_info1": "Emaila",
+	"contacto_info2": "Telefonoa",
+	"contacto_titulo2": "Jarraitu gaitzazu",
+	"contacto_form_lbl_1": "Izena",
+	"contacto_form_lbl_2": "Emaila",
+	"contacto_form_lbl_3": "Gaia",
+	"contacto_form_lbl_4": "Mezua",
+	"contacto_form_enviar": "BIDALI",
+	"contacto_fondo_alt": "Taldeko kideen argazkia"
 }

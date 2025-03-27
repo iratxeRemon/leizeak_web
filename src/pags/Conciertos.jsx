@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
+import { useTranslation } from "react-i18next";
 
 function Conciertos() {
+    const { t } = useTranslation();
        
     const [conciertos, setConciertos] = useState([]);
 
@@ -55,12 +57,12 @@ function Conciertos() {
             </div>
            
             <div className="container mt-5 text-white"> 
-                <h1 className="display-4 fw-bold text-center mb-4 ">Próximos conciertos</h1>
-                <p className="lead text-center mb-5">No hay información sobre los próximos conciertos</p>
+                <h1 className="display-4 fw-bold text-center mb-4 ">{t("conciertos_titulo1")}</h1>
+                <p className="lead text-center mb-5">{t("conciertos_subtitulo1")}</p>
                 
                 <div className="mb-5 pb-5"></div>
 
-                <h1 className="display-4 fw-bold text-center mb-4">Conciertos anteriores</h1>
+                <h1 className="display-4 fw-bold text-center mb-4">{t("conciertos_titulo2")}</h1>
 
                 <section className="row g-4 ">
                     {conciertos.map((concierto, index) => (
@@ -73,7 +75,7 @@ function Conciertos() {
                                 <button className="" style={{position:'absolute', top:'50%', left:'50%', transform:'translate(-50%, -50%)', padding:'10px 20px',
                                     backgroundColor: 'rgba(255, 255, 255, 1)', color: 'black', border: 'none', borderRadius: '5px', cursor: 'pointer'}}
                                     onClick={() => openModal(concierto)}>
-                                    Ver galería
+                                    {t("conciertos_verGaleria")}
                                 </button>
                             )}
                         </div>
