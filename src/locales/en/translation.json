@@ -1,0 +1,21 @@
+{
+  "menu_inicio": "Inicio",
+  "menu_conciertos": "Conciertos",
+  "menu_tienda": "Tienda",
+  "menu_contacto": "Contacto",
+  
+  "inicio_titulo": "Nuestrá música",
+
+
+  "contacto_titulo_1": "Information",
+  "contacto_info_1": "Email",
+  "contacto_info_2": "Telephone",
+  "contacto_titulo_2": "Síguenos",
+  "contacto_form_lbl_1": "Name",
+  "contacto_form_lbl_2": "Email",
+  "contacto_form_lbl_3": "Asunto",
+  "contacto_form_lbl_4": "Mensaje",
+  "contacto_form_enviar": "ENVIAR",
+
+  "welcome": "¡Apoya nuestra música!"
+}

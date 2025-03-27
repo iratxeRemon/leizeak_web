@@ -1,6 +1,9 @@
 import React from 'react';
+import { useTranslation } from "react-i18next";
 
 function Contacto() {
+  const { t } = useTranslation();
+
   const inputStyle = {
     width: "100%",
     background: "transparent",
@@ -12,10 +15,10 @@ function Contacto() {
   };
 
   return (
-    <div className="container-fluid p-0 position-relative vh-100 overflow-hidden " >
+    <div className="container-fluid p-0 position-relative vh-100 " >
 
       {/* Imagen de fondo */}
-      <div className="background-container position-absolute top-0 start-0 w-100 h-100">
+      <div className="position-absolute top-0 start-0 w-100 h-100">
         <img src="src\imgs\pag_contacto.jpg" alt="Foto de las integrantes del grupo" className="background-image w-100 h-100 object-fit-cover" />
       </div>
 
@@ -24,11 +27,11 @@ function Contacto() {
 
 
         {/* Apartado de información de contacto y redes sociales */}
-        <div className="overlay-box bg-black text-white opacity-75 rounded-4 p-5 d-flex flex-column" style={{ width: '35%', height: '80%' }}>
+        <div className="bg-black text-white opacity-75 rounded-4 p-5 d-flex flex-column" style={{ width: '35%', height: '80%' }}>
 
           {/* Sección de información */}
           <div className="row h-75 mb-5">  
-            <h4 className="fw-bold mb-2 fs-2">Información</h4>
+            <h4 className="fw-bold mb-2 fs-2">{t("contacto_titulo_1")}</h4>
 
             {/* Email */}
             <div className="row mb-4 d-flex align-items-center">
@@ -37,7 +40,7 @@ function Contacto() {
               </div>
               <div className="col-10">
                 <p className="fs-3 fw-bold mb-4">Email</p>
-                <p className="fs-5">leizeaktaldea@gmail.com</p>
+                <p className="lead fs-5">leizeaktaldea@gmail.com</p>
               </div>
             </div>
 
@@ -48,7 +51,7 @@ function Contacto() {
               </div>
               <div className="col-10">
                 <p className="fs-3 fw-bold mb-4">Teléfono</p>
-                <p className="fs-5">666 666 666</p>
+                <p className="lead fs-5">666 666 666</p>
               </div>
             </div>
           </div>
@@ -79,7 +82,7 @@ function Contacto() {
         </div>
 
         {/* Formulario */}
-        <div className="overlay-box bg-black opacity-75 rounded-4 p-5" style={{ width: '35%', height: '80%' }}>
+        <div className="bg-black opacity-75 rounded-4 p-5" style={{ width: '35%', height: '80%' }}>
           <form className="d-flex flex-column">
             {/* Nombre */}
             <label htmlFor="nombre" className="text-white mb-1">Nombre *</label>
@@ -90,12 +93,12 @@ function Contacto() {
             <input type="text" id="email" className="mb-5" required style={inputStyle}/>
 
             {/* Asunto */}
-            <label htmlFor="asunto" className="text-white mb-1">Asunto</label>
+            <label htmlFor="asunto" className="text-white mb-1">Asunto *</label>
             <input type="text" id="asunto" className="mb-5" required style={inputStyle}/>
 
             {/* Mensaje */}
-            <label htmlFor="mensaje" className="text-white mb-3">Mensaje</label>
-            <textarea id="mensaje" className="bg-white color-black opacity-5 mb-4 rounded-2 p-2" rows="7" style={{ resize: "none", border: "none", outline: "none"}}></textarea>
+            <label htmlFor="mensaje" className="text-white mb-3">Mensaje *</label>
+            <textarea id="mensaje" className="bg-white color-black opacity-5 mb-4 rounded-2 p-2" required rows="7" style={{ resize: "none", border: "none", outline: "none"}}></textarea>
 
             {/* Botón de enviar */}
             <button type="submit" className='rounded-2 p-2'>ENVIAR</button>

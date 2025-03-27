@@ -1,0 +1,26 @@
+{
+  "menu_inicio": "Inicio",
+  "menu_conciertos": "Conciertos",
+  "menu_tienda": "Tienda",
+  "menu_contacto": "Contacto",
+  
+  "inicio_titulo": "Nuestra música",
+
+  "conciertos_titulo_1": "Próximos conciertos",
+  "conciertos_titulo_2": "Conciertos anteriores",
+  "conciertos_info": "No hay información sobre los próximos conciertos",
+  "conciertos_galeria": "Ver galería",
+
+"tienda_titulo" : "¡Apoya nuestra música!",
+
+  "contacto_titulo_1": "Información",
+  "contacto_info_1": "Email",
+  "contacto_info_2": "Teléfono",
+  "contacto_titulo_2": "Síguenos",
+  "contacto_form_lbl_1": "Nombre",
+  "contacto_form_lbl_2": "Email",
+  "contacto_form_lbl_3": "Asunto",
+  "contacto_form_lbl_4": "Mensaje",
+  "contacto_form_enviar": "ENVIAR"
+
+}
