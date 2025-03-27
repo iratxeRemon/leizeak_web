@@ -49,7 +49,7 @@ function Conciertos() {
         <div>
 
             <div className="position-fixed top-0 left-0 w-100 h-100" 
-                style={{zIndex:-1,  backgroundSize: 'cover', backgroundPosition: 'center', backgroundImage: "url('src/imgs/antxoa2.jpg')"}}>
+                style={{zIndex:-1,  backgroundSize: 'cover', backgroundPosition: 'center', backgroundImage: "url('/imgs/antxoa2.jpg')"}}>
                 <div className="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-25"></div>
                 <div className="position-absolute top-0 start-0 w-100 h-100" style={{ background: 'linear-gradient(180deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.8) 100%)' }}></div>
             </div>
