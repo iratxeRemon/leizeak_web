@@ -26,7 +26,7 @@ function Inicio() {
       <section className="position-relative vh-100 d-flex align-items-center bg-black text-white">
         <div className="position-absolute top-0 start-0 w-100 h-75">
           <img 
-            src="src/imgs/fondo.jpg" alt="LEIZEAK en concierto" 
+            src="/imgs/fondo.jpg" alt="LEIZEAK en concierto" 
             className="w-100 h-100 object-fit-cover opacity-75" style={{ objectPosition: 'center' }}
           />
           <div className="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-25"></div>
@@ -36,7 +36,7 @@ function Inicio() {
         <div className="container z-1">
           <div className="row justify-content-center text-center">
             <div className="col-8">
-              <img src="src/imgs/logo_blanco_2.png" alt="LEIZEAK en concierto" className="w-75 h-40 pacity-100 mb-5" style={{ marginTop: '-350px' }} />
+              <img src="/imgs/logo_blanco_2.png" alt="Logo de leizeak" className="w-75 h-40 pacity-100 mb-5" style={{ marginTop: '-350px' }} />
               <h2 className="display-5 mb-4">Nuevo disco próximamente</h2>
               <p className="lead mb-5">
                 

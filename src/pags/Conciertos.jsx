@@ -66,7 +66,7 @@ function Conciertos() {
                     {conciertos.map((concierto, index) => (
                         
                         <div key={index} className="col-12 col-md-4 mb-4 d-flex align-items-center justify-content-center" style={{position:'relative'}} onMouseEnter={()=>setHoveredImg(index)} onMouseLeave={()=>setHoveredImg(null)}>
-                            <img src={`src/imgs/carteles/${concierto.cartelImg}.jpg`} alt={`${concierto.descripcion}`} className="img-fluid" 
+                            <img src={`/imgs/carteles/${concierto.cartelImg}.jpg`} alt={`${concierto.descripcion}`} className="img-fluid" 
                                 style={{ opacity: (hoveredImg === index && concierto.fotos && Object.keys(concierto.fotos).length > 0) ? 0.5 : 1, transition:'opacity 0.7s'}}
                             />
                             {hoveredImg === index && concierto.fotos && Object.keys(concierto.fotos).length > 0 && (
@@ -97,7 +97,7 @@ function Conciertos() {
                             
                             <img 
                                 key={indexFoto} 
-                                src={`src/imgs/conciertos/${selectedConcierto.fotos[indexFoto]}`} 
+                                src={`/imgs/conciertos/${selectedConcierto.fotos[indexFoto]}`} 
                                 alt={`${selectedConcierto.descripcion}`} 
                                 className="img-fluid m-2" 
                                 style={{ maxWidth: '700px', maxHeight: '700px' }}

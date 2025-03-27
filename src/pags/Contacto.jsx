@@ -19,7 +19,7 @@ function Contacto() {
 
       {/* Imagen de fondo */}
       <div className="position-absolute top-0 start-0 w-100 h-100">
-        <img src="src\imgs\pag_contacto.jpg" alt="Foto de las integrantes del grupo" className="background-image w-100 h-100 object-fit-cover" />
+        <img src="\imgs\pag_contacto.jpg" alt="Foto de las integrantes del grupo" className="background-image w-100 h-100 object-fit-cover" />
       </div>
 
       

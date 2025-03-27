@@ -9,7 +9,7 @@ function Merchan() {
   return (
     <div className='text-white'>
 
-      <div className="position-fixed top-0 left-0 w-100 h-100" style={{zIndex:-1,  backgroundSize: 'cover', backgroundPosition: 'center', backgroundImage: "url('src/imgs/tienda.jpg')"}}>
+      <div className="position-fixed top-0 left-0 w-100 h-100" style={{zIndex:-1,  backgroundSize: 'cover', backgroundPosition: 'center', backgroundImage: "url('/imgs/tienda.jpg')"}}>
         <div className="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-25"></div>
         <div className="position-absolute top-0 start-0 w-100 h-100 " style={{ background: 'linear-gradient(180deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.8) 100%)' }}></div>
       </div>
@@ -98,7 +98,7 @@ function Merchan() {
           <div className="col-md-3 text-start">
             <img 
             src="src/imgs/camisetas.jpg" 
-            alt="Banda" 
+            alt="Leizeak mostrando las camisetas" 
             className="img-fluid rounded" 
             style={{ maxWidth: "100%", height: "auto" }} />
           </div>
@@ -108,7 +108,7 @@ function Merchan() {
           <div className="col-md-3 text-end">
             <img 
             src="src/imgs/logo_camiseta.png" 
-            alt="Banda" 
+            alt="Diseño camiseta" 
             className="img-fluid rounded" 
             style={{ maxWidth: "100%", height: "auto" }} />
           </div>

@@ -178,27 +178,27 @@
     {
         "id": "8",
         "cartelImg": "2021_10_22",
-        "descripcion": "descripción"
+        "descripcion": "Concierto del día 22 de octubre de 2021"
     },
     {
         "id": "7",
         "cartelImg": "2021_09_30",
-        "descripcion": "descripción"
+        "descripcion": "Concierto del día 30 de septiembre de 2021"
     },
     {
         "id": "6",
         "cartelImg": "2021_08_21",
-        "descripcion": "descripción"
+        "descripcion": "Concierto del día 21 de agosto de 2021"
     },
     {
         "id": "5",
         "cartelImg": "2021_08_06",
-        "descripcion": "descripción"
+        "descripcion": "Concierto del día 06 de agosto de 2021"
     },
     {
         "id": "4",
         "cartelImg": "2021_06_05",
-        "descripcion": "descripción"
+        "descripcion": "Concierto del día 05 de junio de 2021"
     },
     {
         "id": "4",
@@ -212,12 +212,12 @@
     {
         "id": "2",
         "cartelImg": "2021_03_27",
-        "descripcion": "descripción"
+        "descripcion": "Concierto del día 27 de marzo de 2021"
     },
     {
         "id": "1",
         "cartelImg": "2021_02_27",
-        "descripcion": "descripción"
+        "descripcion": "Concierto del día 27 de febrero de 2021"
     }
   ]
   
