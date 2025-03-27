@@ -7,8 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "start": "react-scripts start"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@react-three/drei": "^10.0.4",
@@ -20,7 +19,6 @@
     "react-dom": "^19.0.0",
     "react-i18next": "^15.4.1",
     "react-router-dom": "^6.28.0",
-    "react-scripts": "^5.0.1",
     "three": "^0.174.0"
   },
   "devDependencies": {
