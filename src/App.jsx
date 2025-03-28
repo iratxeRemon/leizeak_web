@@ -24,14 +24,17 @@ function App() {
           </Routes>
         </main>
         
+        {/* FOOTER */}
         <footer className="bg-black text-white py-4 border-top">
           <div className="container">
             <div className="row align-items-center text-center text-md-start">
+
 
               <div className="col-md-4 mb-3">
                 <h2 className="text-secondary fw-bold">LEIZEAK</h2>
               </div>
 
+              {/* ENLACES A REDES SOCIALES */}
               <div className="col-md-4 mb-3 d-flex justify-content-center gap-5">
                 <a href="https://www.instagram.com/leizeak/?hl=es" target="_blank" rel="noopener noreferrer" className="text-secondary fs-4">
                   <i className="bi bi-instagram"></i>
@@ -40,11 +43,10 @@ function App() {
                   <i className="bi bi-spotify"></i>
                 </a>
 
-
-
                 <a href="https://www.youtube.com/@leizeaktaldea9731" target="_blank" rel="noopener noreferrer" className="text-secondary fs-4"><i className="bi bi-youtube"></i></a>
               </div>
 
+              {/* OPCIONES DE NAVEGACIÓN */}
               <div className="col-md-4 mb-3 justify-content-end gap-4 d-none d-lg-flex">
                 <a href="/" className="text-secondary text-decoration-none">{t("menu_inicio")}</a>
                 <a href="/conciertos" className="text-secondary text-decoration-none">{t("menu_conciertos")}</a>

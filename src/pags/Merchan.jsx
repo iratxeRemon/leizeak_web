@@ -9,6 +9,7 @@ function Merchan() {
   return (
     <div className='text-white'>
 
+    {/* Imagen de fondo */}
       <div className="position-fixed top-0 left-0 w-100 h-100" style={{zIndex:-1,  backgroundSize: 'cover', backgroundPosition: 'center', backgroundImage: "url('/imgs/tienda.jpg')"}}>
         <div className="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-25"></div>
         <div className="position-absolute top-0 start-0 w-100 h-100 " style={{ background: 'linear-gradient(180deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.8) 100%)' }}></div>
@@ -18,7 +19,7 @@ function Merchan() {
     
       <div className=" mt-5 ">
   
-      
+        {/* Titulo */}
         <div className="container text-center">
           <h1 className="display-4 fw-bold mb-4">{t("tienda_titulo1")}</h1>
           <p className="lead mb-4 mx-auto" style={{ maxWidth: "700px" }}>{t("tienda_subtitulo1")}</p>
@@ -33,7 +34,7 @@ function Merchan() {
 
         {/* SECCIÓN PRODUCTOS */}
         <section className='container mb-5'>
-          <h1 className='display-4 fw-bold text-center mb-4'>{t("tienda_titulo2")}</h1>
+          <h1 className='display-4 fw-bold text-center mb-4'>{t("tienda_titulo2")}</h1> {/* Titulo2 */}
           <p className='lead text-center mb-5'>{t("tienda_subtitulo2")}</p>
           <div className="row">
 
@@ -71,18 +72,18 @@ function Merchan() {
             <div className="col-md-4">
               <div className="card">
               <div style={{ height: "400px" }}>
-                  <ObjectCanvas key="modeloDisco">
-                    <Modelo3D ruta={"/modelos/disco/scene.gltf"}/>
-                  </ObjectCanvas>
-                </div>
-                <div className="card-body">
-                  <h5 className="card-title">{t("tienda_articulo3")}</h5>
-                  <p className="card-text">{t("tienda_descripcionArticulo3")}</p>
-                </div>
+                <ObjectCanvas key="modeloDisco">
+                  <Modelo3D ruta={"/modelos/disco/scene.gltf"}/>
+                </ObjectCanvas>
+              </div>
+              <div className="card-body">
+                <h5 className="card-title">{t("tienda_articulo3")}</h5>
+                <p className="card-text">{t("tienda_descripcionArticulo3")}</p>
               </div>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
       <div className="mb-5 pb-5"></div>
 

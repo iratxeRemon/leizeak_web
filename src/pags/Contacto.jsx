@@ -7,6 +7,7 @@ function Contacto() {
   const [estilo, setEstilo] = useState({ width: "85%", height: "80%" });
   const form = useRef();
 
+  {/* Cuando la pantalla es pequeña se cambia el estilo del formulario para que ocupe más a lo ancho */}
   const updateSize = () => {
     if (window.innerWidth >= 992) { //lg
       setEstilo({ width: "35%", height: "80%" });
@@ -15,12 +16,14 @@ function Contacto() {
     }
   };
 
+  {/* Cuando el tamaño de la página cambia, se reajusta el tamaño del formulario  */}
   useEffect(() => {
     updateSize(); 
     window.addEventListener("resize", updateSize); 
     return () => window.removeEventListener("resize", updateSize); 
   }, []);
 
+  {/* Estilo de los campos del formulario */}
   const inputStyle = {
     width: "100%",
     background: "transparent",
@@ -31,8 +34,7 @@ function Contacto() {
     outline: "none"
   };
 
-  
-
+  {/* Función para enviar email */}
   const sendEmail = (e) => {
     e.preventDefault();
 

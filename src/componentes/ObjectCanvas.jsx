@@ -1,6 +1,5 @@
-//import React, { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
-import { OrbitControls, Preload, useGLTF, Stage } from "@react-three/drei";
+import { OrbitControls, Preload, Stage } from "@react-three/drei";
 
 const ObjectCanvas = ({ children }) => {
   return (

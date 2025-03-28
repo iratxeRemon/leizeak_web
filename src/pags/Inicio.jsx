@@ -88,6 +88,7 @@ function Inicio() {
             </div>
           </div>
           
+          {/* BOTÓN DE 'VER MÁS VIDEOS' */}
           <div className="text-center mt-5">
             <a href='https://www.youtube.com/@leizeaktaldea9731'>
             <button className="btn btn-outline-light btn-lg">
@@ -107,6 +108,7 @@ function Inicio() {
           <div className="row justify-content-center">
             <div className="col-lg-10">
               <div>
+                {/* Se recorre la lista de conciertos y se crea el componente para cada uno de ellos */}
                 {[
                   {fecha: "20 SEPT", tituo: "Concierto Huarte", lugar: "Huarte - Navarra"},
                   {fecha: "22 ABR", tituo: "Concierto 2", lugar: "Lugar 2"},
@@ -115,15 +117,15 @@ function Inicio() {
                   <div key={index} className="concierto p-4 mb-3 rounded bg-dark d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-3">
                     <div className="d-flex align-items-center gap-4">
                       <div className="text-center text-md-start">
-                        <span className="d-block fs-3 fw-bold" style={{ color: "#865709" }}>{conci.fecha}</span>
+                        <span className="d-block fs-3 fw-bold" style={{ color: "#865709" }}>{conci.fecha}</span> {/* Fecha del concierto */}
                       </div>
                       <div>
                         <h3 className="fs-3 fs-lg-3 fw-semibold mb-1">{conci.tituo}</h3>
-                        <p className="text-secondary mb-0">{conci.lugar}</p>
+                        <p className="text-secondary mb-0">{conci.lugar}</p> {/* Lugar del conciertp */}
                       </div>
                     </div>
                     <div className="mt-3 mt-md-0">
-                      <button className="btn text-white" style={{ backgroundColor: "#865709" }}>
+                      <button className="btn text-white" style={{ backgroundColor: "#865709" }}> {/* Botón de 'ver cartel' */}
                         {t("inicio_verCartel")}
                       </button>
                     </div>
