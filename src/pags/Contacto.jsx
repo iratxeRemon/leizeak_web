@@ -1,9 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import { useTranslation } from "react-i18next";
+import emailjs from "@emailjs/browser";
 
 function Contacto() {
   const { t } = useTranslation();
   const [estilo, setEstilo] = useState({ width: "85%", height: "80%" });
+  const form = useRef();
 
   const updateSize = () => {
     if (window.innerWidth >= 992) { //lg
@@ -27,6 +29,25 @@ function Contacto() {
     color: "white",
     padding: "8px 0",
     outline: "none"
+  };
+
+  
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm("service_8z8dk24", "template_9iiue4v", form.current, "Q-vcWUCk30gOMGG8P")
+      .then(
+        (result) => {
+          alert("Correo enviado exitosamente");
+          console.log(result.text);
+        },
+        (error) => {
+          alert("Error al enviar el correo");
+          console.log(error.text);
+        }
+      );
   };
 
   return (
@@ -87,8 +108,8 @@ function Contacto() {
                   </a>
                 </div>
                 <div className="col-4 d-flex justify-content-center align-items-center">
-                  <a href="https://www.facebook.com/Leizeak/?locale=es_ES" target="_blank" rel="noopener noreferrer">
-                    <i className="bi bi-facebook fs-1" style={{ color: 'white' }}></i>
+                  <a href="https://open.spotify.com/intl-es/artist/3njKVWytc6tOHxlFdw12dk?si=1094YQF7TzOedHKKfZFXvQ" target="_blank" rel="noopener noreferrer">
+                    <i className="bi bi-spotify fs-1" style={{ color: 'white' }}></i>
                   </a>
                 </div>
               </div>
@@ -98,26 +119,27 @@ function Contacto() {
 
         {/* Formulario */}
         <div className="bg-black opacity-75 rounded-4 p-3 p-lg-5" style={estilo}>
-          <form className="d-flex flex-column">
+          <form className="d-flex flex-column" ref={form} onSubmit={sendEmail}>
             {/* Nombre */}
             <label htmlFor="nombre" className="text-white mb-lg-1">{t("contacto_form_lbl_1")} *</label>
-            <input type="text" id="nombre" className="mb-2 mb-lg-5" required style={inputStyle}/>
+            <input type="text" id="nombre" name="name" className="mb-2 mb-lg-5" required style={inputStyle} />
 
             {/* Email */}
             <label htmlFor="email" className="text-white mb-lg-1">{t("contacto_form_lbl_2")} *</label>
-            <input type="text" id="email" className="mb-2 mb-lg-5" required style={inputStyle}/>
+            <input type="email" id="email" name="email" className="mb-2 mb-lg-5" required style={inputStyle} />
 
             {/* Asunto */}
             <label htmlFor="asunto" className="text-white mb-lg-1">{t("contacto_form_lbl_3")} *</label>
-            <input type="text" id="asunto" className="mb-2 mb-lg-5" required style={inputStyle}/>
+            <input type="text" id="asunto" name="title" className="mb-2 mb-lg-5" required style={inputStyle} />
 
             {/* Mensaje */}
             <label htmlFor="mensaje" className="text-white mb-1 mb-lg-3">{t("contacto_form_lbl_4")} *</label>
-            <textarea id="mensaje" className="bg-white color-black opacity-5 mb-2 mb-lg-4 rounded-2 p-2" required rows="7" style={{ resize: "none", border: "none", outline: "none"}}></textarea>
+            <textarea id="mensaje" name="message" className="bg-white color-black opacity-5 mb-2 mb-lg-4 rounded-2 p-2" required rows="7" style={{ resize: "none", border: "none", outline: "none"}}></textarea>
 
             {/* Botón de enviar */}
             <button type="submit" className='rounded-2 p-2'>{t("contacto_form_enviar")}</button>
           </form>
+
         </div>
 
       </div>

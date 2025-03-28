@@ -33,15 +33,22 @@ function App() {
               </div>
 
               <div className="col-md-4 mb-3 d-flex justify-content-center gap-5">
-                <a href="#" className="text-secondary fs-4"><i className="bi bi-instagram"></i></a>
-                <a href="#" className="text-secondary fs-4"><i className="bi bi-facebook"></i></a>
-                <a href="#" className="text-secondary fs-4"><i className="bi bi-youtube"></i></a>
+                <a href="https://www.instagram.com/leizeak/?hl=es" target="_blank" rel="noopener noreferrer" className="text-secondary fs-4">
+                  <i className="bi bi-instagram"></i>
+                </a>
+                <a href="https://open.spotify.com/intl-es/artist/3njKVWytc6tOHxlFdw12dk?si=1094YQF7TzOedHKKfZFXvQ" target="_blank" rel="noopener noreferrer" className="text-secondary fs-4">
+                  <i className="bi bi-spotify"></i>
+                </a>
+
+
+
+                <a href="https://www.youtube.com/@leizeaktaldea9731" target="_blank" rel="noopener noreferrer" className="text-secondary fs-4"><i className="bi bi-youtube"></i></a>
               </div>
 
               <div className="col-md-4 mb-3 justify-content-end gap-4 d-none d-lg-flex">
                 <a href="/" className="text-secondary text-decoration-none">{t("menu_inicio")}</a>
                 <a href="/conciertos" className="text-secondary text-decoration-none">{t("menu_conciertos")}</a>
-                <a href="/productos" className="text-secondary text-decoration-none">{t("menu_tienda")}</a>
+                <a href="/merchan" className="text-secondary text-decoration-none">{t("menu_tienda")}</a>
                 <a href="/contacto" className="text-secondary text-decoration-none">{t("menu_contacto")}</a>
               </div>
 

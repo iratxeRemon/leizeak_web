@@ -41,15 +41,15 @@ function Inicio() {
             <div className="col-8">
               <img src="/imgs/logo_blanco_2.png" alt="Logo de leizeak" className="w-75 h-40 pacity-100 mb-5" style={{ marginTop: '-350px' }} />
               <h2 className="display-5 mb-4">{t("disco")}</h2>
-              <p className="lead mb-5">
-                
-              </p>
-              <button className="btn btn-lg btn-danger" >
-                <a className='text-white text-decoration-none' href="#nuestraMusica">
-                  <i className="bi bi-play-fill me-2 "></i>
+              
+              <div className="text-center mt-5">
+                <a href='#nuestraMusica'>
+                <button className="btn btn-outline-light btn-lg">
+                <i className="bi bi-play-fill me-2"></i>
                   {t("inicio_escucharAhora")}
+                </button>
                 </a>
-              </button>
+              </div>
             </div>
           </div>
         </div>
@@ -108,9 +108,9 @@ function Inicio() {
             <div className="col-lg-10">
               <div>
                 {[
-                  {fecha: "15 ABR", tituo: "Concierto inventado 1", lugar: "Lugar"},
-                  {fecha: "22 ABR", tituo: "Concierto inventado 2", lugar: "Lugar"},
-                  {fecha: "29 ABR", tituo: "Concierto inventado 3", lugar: "Lugar"},
+                  {fecha: "20 SEPT", tituo: "Concierto Huarte", lugar: "Huarte - Navarra"},
+                  {fecha: "22 ABR", tituo: "Concierto 2", lugar: "Lugar 2"},
+                  {fecha: "29 ABR", tituo: "Concierto 3", lugar: "Lugar 3"},
                 ].map((conci, index) => (
                   <div key={index} className="concierto p-4 mb-3 rounded bg-dark d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-3">
                     <div className="d-flex align-items-center gap-4">
@@ -118,7 +118,7 @@ function Inicio() {
                         <span className="d-block fs-3 fw-bold" style={{ color: "#865709" }}>{conci.fecha}</span>
                       </div>
                       <div>
-                        <h3 className="fs-4 fw-semibold mb-1">{conci.tituo}</h3>
+                        <h3 className="fs-3 fs-lg-3 fw-semibold mb-1">{conci.tituo}</h3>
                         <p className="text-secondary mb-0">{conci.lugar}</p>
                       </div>
                     </div>
